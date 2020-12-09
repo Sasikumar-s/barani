@@ -26,7 +26,7 @@
   </nav>
   <!--/.Navbar blue-->
 
-  <div style="height: 10px"></div>
+  <div style="height: 5px"></div>
 
 <section class="services-section spad">
     <div class="container">
@@ -39,9 +39,9 @@
         </div>
         <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-6" *ngFor = "let item of title" >
-                <div class="services__item" routerLink='/{{item.title}}' style="outline: none; height: 300px;">
+                <div class="services__item" routerLink='/index' style="outline: none; height: 200px;" (click) = "action(item.title)">
                     <img src="assets/{{item.imgUrl}}"
-                    [title]='item.title'>
+                    [title]='item.title' style="width: 50%;">
                     <h4 style="text-align: center; padding-top: 10px; " >{{item.title}}</h4>
                 </div>
             </div>

@@ -6,6 +6,7 @@ import { PlanningComponent } from './planning/planning.component';
 import { ProductionComponent } from './production/production.component';
 import { PurchaseComponent } from './purchase/purchase.component';
 import { StockComponent } from './stock/stock.component';
+import { IndexComponent } from './index/index.component';
 const routes: Routes = [
   {
     path:'',
@@ -17,25 +18,10 @@ const routes: Routes = [
     component:HomeComponent
   },
   {
-    path:'marketing',
-    component:MarketingComponent
-  },
-  {
-    path:'planning',
-    component:PlanningComponent
-  },
-  {
-    path:'production',
-    component:ProductionComponent
-  },
-  {
-    path:'purchase',
-    component:PurchaseComponent
-  },
-  {
-    path:'stock',
-    component:StockComponent
+    path:'index',
+    component:IndexComponent
   }
+
 ];
 
 @NgModule({
