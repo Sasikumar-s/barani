@@ -2472,16 +2472,24 @@
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
+<<<<<<< HEAD
 @media only screen and (min-width: 1280px) {
+=======
+@media only screen and (min-width: 1200px) {
+>>>>>>> 697b1a50eb4d132383d461ef6eac3ca7333aa00c
 	.container {
 		max-width: 1170px;
 	}
 }
+<<<<<<< HEAD
 @media only screen and (width:540px) {
 	.services__item {
 		image-resolution: 20px;
 	}
 }
+=======
+
+>>>>>>> 697b1a50eb4d132383d461ef6eac3ca7333aa00c
 /* Medium Device = 1200px */
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
