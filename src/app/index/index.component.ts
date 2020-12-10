@@ -1,14 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import {APIService} from 'src/app/api.service';
+import { stringify } from 'querystring';
+import {APIService} from 'src/app/api.service'
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-index',
+  templateUrl: './index.component.html',
+  styleUrls: ['./index.component.css']
 })
-export class HomeComponent implements OnInit {
+export class IndexComponent implements OnInit {
 
-  titleValue:string = ''
-  title = [
+  constructor(public HttpResponse:APIService) {
+    this.value = this.HttpResponse.value    
+   }
+   value:string;
+   title = [
     {'title':"Planning" , "imgUrl":"plan.jpg" },
     {'title':"Purchase" , "imgUrl":"purchase.jpg" },
     {'title':"Stock" , "imgUrl":"stock.jpg" },
@@ -16,16 +20,9 @@ export class HomeComponent implements OnInit {
     {'title':"Production" , "imgUrl":"production.jpg" },
     {'title':"Quality" , "imgUrl":"checking.jpg" },
     {'title':"Engineering", "imgUrl":"engineering.jpg"} ]
-  
-
-  constructor(public HttpService:APIService) { }
-
+    }
   ngOnInit(): void {
-    console.log(this.titleValue)
-  }
-  action(val){
-    this.HttpService.value = val;
   }
   
-
+ 
 }

@@ -9,6 +9,8 @@ import { PurchaseComponent } from './purchase/purchase.component';
 import { StockComponent } from './stock/stock.component';
 import { MarketingComponent } from './marketing/marketing.component';
 import { ProductionComponent } from './production/production.component';
+import { IndexComponent } from './index/index.component';
+import {APIService} from './api.service';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,14 @@ import { ProductionComponent } from './production/production.component';
     PurchaseComponent,
     StockComponent,
     MarketingComponent,
-    ProductionComponent
+    ProductionComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ APIService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

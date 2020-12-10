@@ -2,6 +2,7 @@
 html,
 body {
 	height: 100%;
+	margin: 0%;
 	font-family: 'Roboto', sans-serif;
 	
 }
@@ -10,7 +11,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
+h5, 
 h6 {
 	margin: 0;
 	color: #111111;
@@ -50,9 +51,10 @@ p {
 	line-height: 26px;
 	margin: 0 0 15px 0;
 }
-img {
-	max-width: 100%;
-}
+
+
+
+
 
 input:focus,
 select:focus,
